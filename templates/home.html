@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Halaman Utama</title>
+    <title>SweetPOD</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-</div>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-container">
 
-<h1>SweetPod</h1>
-<p>--LIQUID SUGAR POD--</p>
-<p>LIGHT SWEET with STEVIA</p>
+        <div class="hero-text">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+
+            <h1>SweetPOD</h1>
+            <p>Premium Light Sugar Pod Solution for Modern Beverages</p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn-primary">Discover</a>
+                <a href="#contact" class="btn-secondary">Contact</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/product.png') }}">
+        </div>
+
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust">
+    <p>Trusted by modern cafés & beverage innovators</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About SweetPOD</h2>
+    <p>
+        SweetPOD is Malaysia’s first premium light sugar pod system,
+        designed to modernize beverage preparation with precision, hygiene,
+        and consistency.
+    </p>
+</section>
+
+<!-- PRODUCT -->
+<section class="section dark">
+    <h2>Product Innovation</h2>
+    <p>
+        A ready-to-use sugar pod solution engineered for cafés, F&B brands,
+        and modern beverage automation.
+    </p>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+    <h2>Why SweetPOD</h2>
+
+    <div class="grid">
+        <div class="card">Consistent Taste</div>
+        <div class="card">Hygienic Packaging</div>
+        <div class="card">Fast Preparation</div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="cta">
+    <h2>Let’s Work Together</h2>
+    <p>Interested in SweetPOD for your business?</p>
+    <a href="mailto:info@sweetpod.com" class="btn-primary">Contact Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 SweetPOD Malaysia. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
